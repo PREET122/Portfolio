@@ -1,0 +1,417 @@
+<!DOCTYPE html> <!-- Root HTML document with smooth scrolling and offset for sticky header -->
+<html lang="en" class="scroll-smooth scroll-pt-20">
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport -->
+  <title>Preet Koshiya</title>
+<!-- Tailwind CSS compiled output -->
+  <link href="src/output.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+<!-- ================= HEADER / NAVBAR ================= -->
+  <!-- Sticky header with blur effect -->
+<header class="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+<!-- Logo -->
+    <img class="w-17 h-17" src="images/logo.png" >
+    
+    <!-- Desktop Navigation Menu Links -->
+  <ul class=" sm:flex md:flex gap-6 text-lg font-medium text-gray-500 group">
+    <li><a href="#home" class="text-violet-400  transition group-hover:text-gray-400 hover:text-violet-400">Home</a> </li>
+    <li><a href="#services" class="transition  group-hover:text-gray-400 hover:text-violet-400">Services</a></li>
+    <li><a href="#about" class="transition group-hover:text-gray-400 hover:text-violet-400">About</a></li>
+    <li><a href="#skills" class="transition group-hover:text-gray-400 hover:text-violet-400">Skills</a></li>
+    <li><a href="#portfolio" class="transition group-hover:text-gray-400 hover:text-violet-400">Portfolio</a></li>
+    <li><a href="#certi" class="transition group-hover:text-gray-400 hover:text-violet-400">Certificates</a></li>
+    <li><a href="#contact" class="transition group-hover:text-gray-400 hover:text-violet-400">Contact</a></li>
+  </ul>
+
+   <!-- Dark mode toggle (CSS only) -->
+    <input type="checkbox" id="dark-toggle" class="peer hidden">
+    <label for="dark-toggle" class="cursor-pointer px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded sm:hidden md:hidden">Dark Mode</label>
+    <label for="dark-toggle" class="cursor-pointer p-2 rounded-full bg-gray-200 peer-checked:bg-gray-700 transition">🌙</label>
+  <div class=" bg-white text-gray-800 peer-checked:bg-gray-900 peer-checked:text-gray-100 transition"></div>
+    
+  <!-- Social Media Icons -->
+    <div class="flex gap-2 peer">
+  <!-- X (Twitter) -->
+      <a href="https://twitter.com/" class="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-blue-400">
+        X
+      </a>
+  <!-- GitHub path taken online -->
+      <a href="https://github.com/PREET122?tab=repositories" class="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-blue-900">
+        GH
+      </a> 
+  <!-- Instagram -->
+      <a href="https://www.instagram.com/" class="w-10 h-10 border rounded-xl flex items-center justify-center hover:bg-pink-400">
+        IG 
+      </a>
+</div>
+
+
+</nav>
+</header>
+<!-- ================= HERO / HOME SECTION ================= -->
+<main class="">  
+<section class="bg-violet-200 border-b " id="home" >
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-20 px-6">
+
+    <div class="m-20 sm:flex md:flex flex-col justify-center items-start text-center md:text-left">
+      <span class="inline-block px-3 py-1 border rounded-full text-sm font-semibold bg-white">
+        ✳ HELLO!
+      </span>
+
+      <h1 class="mt-6 text-4xl md:text-5xl font-bold leading-tight">
+        I’m Preet Koshiya,<br>
+        <span class="underline decoration-indigo-400">a Full Stack Developer.</span>
+      </h1>
+
+      <p class="mt-5 text-gray-700 text-lg">
+        I’m a freelance Mern Developer based in Surat.
+        I’m very passionate about the work that I do.
+      </p>
+
+      <button class="mt-8 px-6 py-3 border rounded-xl shadow-sm font-semibold bg-white hover:translate-y-0.5 transition  hover:bg-blue-300">
+      <a href="#portfolio" class="text-indigo-500 hover:text-amber-50 cursor-pointer">See My Works</a>
+      </button>
+      <button class="mt-8 px-6 py-3 border rounded-xl shadow-sm font-semibold bg-white hover:translate-y-0.5 transition  hover:bg-blue-300">
+      <a href="placeholder" class="text-indigo-500 hover:text-amber-50 cursor-pointer">Downland CV</a>
+      </button>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="relative">
+    <!-- Profile image with animation -->
+     <div class="w-72 h-96 bg-purple-300 rounded-t-full border card-w card-h"></div>
+        <img src="images/m2.jpeg" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-58 md:w-72 object-cover rounded-t-full float-img" alt="Preet Koshiya">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SERVICES Section -->
+<section class="py-20" id="services">
+  <div class="max-w-6xl mx-auto text-center px-6">
+    <span class="inline-block px-4 py-1 border rounded-full text-sm font-semibold mb-4">
+      ✳ MY SERVICES
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold leading-snug mb-12">
+      The service I offer is specifically<br>
+      designed to meet your needs.
+    </h2>
+<!-- Services Cards 4 -->
+    <div class="grid md:grid-cols-2 gap-8 ">
+      <div class="flex gap-4 p-6 rounded-2xl border bg-indigo-100/40 text-left card-ht">
+        <div class="shrink-0 w-12 h-12 flex items-center justify-center border rounded-full bg-white">💡</div>
+        <div>
+          <h3 class="font-semibold text-lg">Strategy & Planning</h3>
+          <p class="text-gray-600 text-sm mt-1">Streamline your campaigns with tools that improve engagement and visibility.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 rounded-2xl border bg-green-100/40 text-left card-ht">
+        <div class="shrink-0 w-12 h-12 flex items-center justify-center border rounded-full bg-white">🔎</div>
+        <div>
+          <h3 class="font-semibold text-lg">User Research</h3>
+          <p class="text-gray-600 text-sm mt-1">Simplify project workflows with organized tools and strategies designed to keep goals on track.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 rounded-2xl border bg-pink-100/40 text-left card-ht">
+        <div class="shrink-0 w-12 h-12 flex items-center justify-center border rounded-full bg-white">🖥</div>
+        <div>
+          <h3 class="font-semibold text-lg">Web Design</h3>
+          <p class="text-gray-600 text-sm mt-1">Gain valuable insights into user behavior and optimize your digital presence.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4 p-6 rounded-2xl border bg-blue-100/40 text-left card-ht">
+        <div class="shrink-0 w-12 h-12 flex items-center justify-center border rounded-full bg-white">🎨</div>
+        <div>
+          <h3 class="font-semibold text-lg">Data Analytics</h3>
+          <p class="text-gray-600 text-sm mt-1">Understand your market with precise data analysis and customer insights.</p>
+        </div>
+      </div>
+    </div>
+ <!-- ================= button ================= -->
+    <button class="mt-10 px-6 py-3 border rounded-xl shadow-sm font-semibold hover:translate-y-0.5 transition hover:bg-blue-300">
+      <a href="https://github.com/PREET122?tab=repositories" target="_blank" class="text-indigo-500 hover:text-amber-50 cursor-pointer ">Check Portfolio</a>
+    </button>
+  </div>
+</section>
+<!-- Profile section -->
+<section class="bg-violet-200 border-t border-b py-24" id="about">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-start">
+     <!-- ================= profile left  ================= -->
+    <div class="text-center md:text-left">
+      <div class="w-72 h-72 mx-auto md:mx-0 rounded-full bg-purple-300 border flex items-center justify-center overflow-hidden custom-image-card">
+        <img src="images/my.jpeg" class="object-cover w-full h-full" alt="Experience">
+      </div>
+      <div class="custom-image-card">
+        <h3 class="mt-8 font-semibold text-lg text-center">My experiences</h3>
+        <p class="text-gray-700 text-center text-sm mt-2 leading-relaxed text-center">I have had the pleasure to work with companies across a variety of industries.</p>
+        <button  class="mt-6 px-5 py-2 border rounded-xl shadow-sm hover:translate-y-0.5 transition text-sm font-semibold bg-white  hover:bg-blue-300 hover:text-amber-50 btn">
+          <a href="https://www.linkedin.com/in/preet-koshiya/" target="_blank" class="text-indigo-500 hover:text-amber-50 cursor-pointer">More About Me</a>
+        </button>
+      </div>
+    </div>
+<!-- About Me -->
+ <!-- ================= profile right  ================= -->
+    <div>
+      <span class="inline-block px-4 py-1 border rounded-full text-sm font-semibold mb-3 bg-white">✳ ABOUT</span>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4"> About me</h2>
+      <p class="text-gray-700 text-sm leading-relaxed mb-6">I’m Preet Koshiya, a Full Stack Developer based in Surat, 
+                                                              with a strong passion for building clean and scalable web applications. 
+                                                              I enjoy working across both frontend and backend technologies to turn ideas into functional digital solutions. I’m driven by continuous learning, problem-solving, and creating meaningful user experiences.</p>
+      
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <span class="text-xs text-gray-500 w-32 shrink-0">NOV 2022 –  DEC2025</span>
+          <div>
+            <h4 class="font-semibold">Techincal Support</h4>
+            <p class="text-gray-600 text-sm">Porvide Tech support to clients.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-xs text-gray-500 w-32 shrink-0">SEP 2020 – APR 2022</span>
+          <div>
+            <h4 class="font-semibold">Teaching-Assistant at Univeristy</h4>
+            <p class="text-gray-600 text-sm">Assist Proffesor in grading and teaching.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- My Skills section -->
+<section class="py-24 px-6" id="skills">
+    <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1 border border-slate-700 rounded-full text-sm font-semibold mb-4 bg-slate-800/50">✳ MY SKILLS</span>
+      <h2 class="text-4xl font-bold">
+        Professional <span class="text-cyan-400">Skills</span>
+      </h2>
+    </div>
+
+      <!-- Main Grid: Left (Linear Bars) & Right (Circular Progress) -->
+      <div class="grid grid-cols-2 lg:grid-cols-2 gap-16 items-start skill-bar-sec ">
+
+        <!-- Left: Linear Skills -->
+        <div class="space-y-8 right-bar">
+          <!-- HTML-->
+          <div class="flex items-center justify-between relative bar-border">
+            <span class="text-lg font-medium html">HTML</span>
+            <span class="text-lg font-bold text-cyan-500">80%</span>
+            <div class="absolute left-0 right-0 bottom-0 h-0.5 bg-gray-300">
+              <div class="h-0.5 bg-cyan-500 skill-line" style="width: 80%"></div>
+            </div>
+          </div>
+          <!-- css-->
+          <div class="flex items-center justify-between relative bar-border">
+            <span class="text-lg font-medium css">CSS</span>
+            <span class="text-lg font-bold text-cyan-500">75%</span>
+            <div class="absolute left-0 right-0 bottom-0 h-0.5 bg-gray-300">
+              <div class="h-0.5 bg-cyan-500 skill-line" style="width: 75%"></div>
+            </div>
+          </div>
+          <!-- js -->
+          <div class="flex items-center justify-between relative bar-border">
+            <span class="text-lg font-medium js">JavaScript</span>
+            <span class="text-lg font-bold text-cyan-500">70%</span>
+            <div class="absolute left-0 right-0 bottom-0 h-0.5 bg-gray-300">
+              <div class="h-0.5 bg-cyan-500 skill-line" style="width: 70%"></div>
+            </div>
+          </div>
+          <!-- PHP -->
+          <div class="flex items-center justify-between relative bar-border">
+            <span class="text-lg font-medium php">PHP</span>
+            <span class="text-lg font-bold text-cyan-500">60%</span>
+            <div class="absolute left-0 right-0 bottom-0 h-0.5 bg-gray-300">
+              <div class="h-0.5 bg-cyan-500 skill-line" style="width: 60%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Circular Skills -->
+        <div class="flex flex-wrap justify-center gap-10 lg:gap-16 left-scroll ">
+          <!-- Team Work -->
+          <div class="text-center">
+            <div class="circular-progress" style="--target: 80">
+              <span class="progress-value">80%</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-gray-700 uppercase tracking-wider">Team Work</p>
+          </div>
+          <!-- Creativity -->
+          <div class="text-center">
+            <div class="circular-progress" style="--target: 90">
+              <span class="progress-value">90%</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-gray-700 uppercase tracking-wider">Creativity</p>
+          </div>
+          <!-- Problem Solving -->
+          <div class="text-center">
+            <div class="circular-progress" style="--target: 70">
+              <span class="progress-value">70%</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-gray-700 uppercase tracking-wider">Problem Solving</p>
+          </div>
+          <!-- Communication -->
+          <div class="text-center">
+            <div class="circular-progress" style="--target: 75">
+              <span class="progress-value">75%</span>
+            </div>
+            <p class="mt-3 text-sm font-semibold text-gray-700 uppercase tracking-wider">Communication</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- My Portfolio section -->
+<section class="py-24 bg-violet-200 sm:flex md:flex" id="portfolio">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1 border rounded-full text-sm font-semibold mb-4">✳ MY WORKS</span>
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">Check out some of our awesome projects.</h2>
+    </div>
+    <!-- Portfolio Project Cards Grid -->
+    <div class="grid md:grid-cols-2 gap-x-10 gap-y-16">
+      <div class="group cursor-pointer">
+        <div class="relative bg-indigo-50 rounded-[40px] p-12 mb-6 overflow-hidden transition-all duration-500 group-hover:shadow-xl">
+          <div class="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
+          <img src="images/web site.png" class="w-full h-auto rounded-2xl shadow-lg border border-white/50 transition-transform duration-500 group-hover:scale-105" alt="Snowflake">
+        </div>
+        <h3 class="text-2xl font-bold">Tech Mintra</h3>
+        <p class="text-gray-500 mt-2 mb-4">A small online store offering smart, useful tech products for home, travel, and daily routines.</p>
+        <a href="https://techmitra.pro/" class="font-bold border-b-2 border-black pb-1">View Case Study →</a>
+      </div>
+      <!-- Project 2  -->
+     <div class="group cursor-pointer">
+        <div class="relative bg-purple-50 rounded-[40px] p-12 mb-6 overflow-hidden transition-all duration-500 group-hover:shadow-xl">
+          <div class="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
+          <img src="images/web-site2.png" class="w-full h-auto rounded-2xl shadow-lg border border-white/50 transition-transform duration-500 group-hover:scale-105" alt="Meeko">
+        </div>
+        <h3 class="text-2xl font-bold">Silk & Dress</h3>
+        <p class="text-gray-500 mt-2 mb-4">Designed and built an online store specializing in sarees and women’s fashion.</p>
+        <a href="#" class="font-bold border-b-2 border-black pb-1 cursor-pointer">View Case Study →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Certificates ================= -->
+ 
+<section class="py-24 bg-white" id="certi">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span class="inline-block px-4 py-1 border rounded-full text-xs font-bold mb-6 uppercase tracking-widest text-gray-600">✳ Certificates</span>
+    <div class=" border-t border-gray-200 flex flex-row justify-between ">
+      <!-- card 1 -->
+    <div class="main-card">
+       <div class="image-number">
+        <img src="images/intenshala.png" class="w-8 h-8 inline-block mr-4" alt="intershala Icon">
+        <p class="certificat-text">01</p>
+       </div>
+       <div>
+        <h3 class="text-lg font-medium text-gray-800">
+          Full Stack Development
+        </h3>
+        <p class="text-1xl text-gray-400 group-hover:text-black">
+          I have successfully earned a Full Stack Development certificate, which has strengthened my skills in building complete web applications from frontend to backend.
+        </p>
+      </div>
+    </div>
+<!-- card 2 -->
+
+    <div class="main-card">
+       <div class="image-number">
+        <img src="images/technology.png" class="w-8 h-8 inline-block mr-4" alt=" Icon">
+        <p class="certificat-text">02</p>
+       </div>
+       <div>
+        <h3 class="text-lg font-medium text-gray-800">
+          Web Development
+        </h3>
+        <p class="text-1xl text-gray-400 group-hover:text-black">
+          I have earned a Web Development certification that enhanced my understanding of designing and developing responsive, user-friendly websites.
+        </p>
+      </div>
+    </div>
+<!-- card 3 -->
+    <div class="main-card">
+       <div class="image-number">
+        <img src="images/project-management.png" class="w-8 h-8 inline-block mr-4" alt="Q Icon">
+        <p class="certificat-text">03</p>
+       </div>
+       <div>
+        <h3 class="text-lg font-medium text-gray-800">
+          Data Analysis
+        </h3>
+        <p class="text-1xl text-gray-400 group-hover:text-black">
+          I have earned a Data Analysis certification that strengthened my ability to collect, analyze, and interpret data to support informed decision-making.
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- Contact section -->
+<section class="relative bg-violet-200 py-32 px-6" id="contact">
+  <div class="max-w-4xl mx-auto bg-white rounded-[40px] border border-gray-200 p-12 md:p-20 shadow-sm relative z-10">
+    <div class="text-center mb-12">
+      <span class="inline-block px-4 py-1 border rounded-full text-xs font-bold mb-6 uppercase tracking-widest text-gray-600">✳ Contact</span>
+      <h2 class="text-4xl md:text-5xl font-bold">Got a project in mind?<br>Let's get in touch.</h2>
+    </div>
+
+    <!-- Contact Form with Name, Email, and Message Fields -->
+    <form class="space-y-8">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="border-b border-gray-300 py-2">
+          <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Name</label>
+          <input type="text" placeholder="Your name *" name="name" class="w-full outline-none text-gray-800 placeholder-gray-400 bg-transparent">
+        </div>
+        <div class="border-b border-gray-300 py-2">
+          <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Email</label>
+          <input type="email" placeholder="Email address *" name="email" class="w-full outline-none text-gray-800 placeholder-gray-400 bg-transparent">
+        </div>
+      </div>
+      <div class="border-b border-gray-300 py-2">
+        <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Message</label>
+        <textarea rows="3" placeholder="Tell me about your project *" class="w-full outline-none text-gray-800 placeholder-gray-400 bg-transparent resize-none"></textarea>
+      </div>
+      <div class="flex justify-center mt-10">
+        <button type="submit" class="px-10 py-3 border border-gray-800 rounded-xl font-bold transition hover:bg-blue-300 hover:text-amber-50">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- ================= FOOTER SECTION ================= -->
+<footer class="bg-indigo-50 py-12 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="text-center md:text-left">
+      <h3 class="text-2xl font-bold mb-2">Portfolio</h3>
+      <p class="text-gray-500 text-sm">© portfolio by Preet</p>
+    </div>
+    <div class="flex gap-8 text-sm font-semibold text-gray-700">
+      <a href="#about" class="hover:text-black cursor-pointer">About</a>
+      <a href="#contact" class="hover:text-black cursor-pointer">Contact</a>
+      <a href="#portfolio" class="hover:text-black cursor-pointer" >Portfolio</a>
+    </div>
+    <div class="flex gap-4">
+      <a href="#" class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center bg-white shadow-sm hover:-translate-y-1 transition">^</a>
+    </div>
+  </div>
+</main>
+</footer>
+
+</body>
+</html>
